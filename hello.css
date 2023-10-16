@@ -1,7 +1,7 @@
 * {
     margin:0;
     padding:0;
-    font-family: 'Arvo';
+    font-family: 'Times New Roman',;
   }
   
   body{
@@ -60,17 +60,17 @@
     }
   }
   
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 400px){
     h1{
     text-align:center;
-    text-transform: uppercase;
+    text-transform: uppercase;  
     color: #F1FAEE; 
-    font-size: 2.125rem;
+    font-size: 2rem;
   }
     
     .roller{
-    height: 1rem; 
-    line-height: 0.1rem;  
+    height: 10px; 
+    line-height: 0.25px;  
     }
     
     .gif {
@@ -87,17 +87,18 @@
       top:0;
     }
     25%{
-      top: -2.125rem;    
+      top: -3.125rem;    
     }
     50%{
-      top: -4.25rem;
+      top: -6.25rem;
     }
     72.5%{
-      top: -6.375rem;
+      top: -9.375rem;
     }
   }
   }
-  @media screen and (max-width: 400px){
+
+  @media screen and (max-width: 600px){
     h1{
     text-align:center;
     text-transform: uppercase;
