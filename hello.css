@@ -1,0 +1,191 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Arvo';
+  }
+  
+  body{
+    background-color: #011730;
+  }
+  
+  .main{
+    height:100vh;
+    width:100%;  
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #32C1FF; 
+    font-size: 4rem;
+  }
+  .gif{
+    align-items: center;
+    padding-top: 23%;
+  }
+  .roller{
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1D3557;
+  }
+  
+  .roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;  
+  }
+  
+  @keyframes slide {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -4rem;    
+    }
+    50%{
+      top: -8rem;
+    }
+    72.5%{
+      top: -12.25rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px){
+    h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 2.125rem;
+  }
+    
+    .roller{
+    height: 1rem; 
+    line-height: 0.1rem;  
+    }
+    
+    #spare-time {
+      font-size: 50px;
+      letter-spacing: 0.1rem;
+    }
+    
+    .roller #rolltext {  
+    animation: slide-mob 5s infinite;  
+  }
+    
+    @keyframes slide-mob {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -2.125rem;    
+    }
+    50%{
+      top: -4.25rem;
+    }
+    72.5%{
+      top: -6.375rem;
+    }
+  }
+  }
+
+  .container {
+    height: 1em;
+    font-size: 4rem;
+    font-family: sans-serif;
+    position: relative;
+  }
+  
+  .container div {
+    position: absolute;
+    left: 0;
+    margin-top:15%;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  
+  .upper {
+    top: 0;
+    height: 52.5%;
+    color: #fff;
+    overflow: hidden;
+    z-index: 3;
+    animation: moveUp 4.5s infinite ease-in-out;
+    background-color: #011730;
+  }
+  
+  .lower {
+    bottom: 0;
+    height: 100%;
+    background: linear-gradient(180deg, #011730 52.5%, #fff 52.5%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    z-index: 1;
+    animation: moveDown 4.5s infinite ease-in-out;
+  }
+  
+  .inside {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    text-align: center;
+    z-index: 2;
+    font-size: 1rem;
+    color: #FFD333;
+  }
+  
+  @keyframes moveUp {
+    0%,
+    100% {
+      top: 0;
+    }
+  
+    50%,
+    70% {
+      top: -45px;
+    }
+  }
+  
+  @keyframes moveDown {
+    0%,
+    100% {
+      top: 0;
+    }
+  
+    50%,
+    70% {
+      top: 30px;
+    }
+  }
+  
+  @media (max-width: 424px) {
+    .container {
+      font-size: 2.5rem;
+    }
+  
+    .inside {
+      font-size: 0.75rem;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .container {
+      font-size: 2rem;
+    }
+  
+    .inside {
+      font-size: 0.5rem;
+    }
+  }
+  
